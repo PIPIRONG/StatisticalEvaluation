@@ -1,0 +1,19 @@
+[[Model]]
+    Model(lognormal)
+[[Fit Statistics]]
+    # fitting method   = leastsq
+    # function evals   = 16
+    # data points      = 101
+    # variables        = 2
+    chi-square         = 1.9705e-13
+    reduced chi-square = 1.9904e-15
+    Akaike info crit   = -3416.91423
+    Bayesian info crit = -3411.68398
+[[Variables]]
+    amplitude:  1 (fixed)
+    center:     12.7018981 +/- 0.02106990 (0.17%) (init = 12.65995)
+    sigma:      1.25261820 +/- 0.02148582 (1.72%) (init = 1.225748)
+    height:     2.1254e-06 +/- 3.5934e-08 (1.69%) == 'amplitude/max(1e-15, (sigma*sqrt(2*pi)))*exp(sigma**2/2-center)'
+    fwhm:       283201.702 +/- 5928.13842 (2.09%) == 'exp(center-sigma**2+sigma*sqrt(2*log(2)))-exp(center-sigma**2-sigma*sqrt(2*log(2)))'
+[[Correlations]] (unreported correlations are < 0.100)
+    C(center, sigma) = 0.616
